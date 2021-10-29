@@ -3,7 +3,7 @@
 % fig2b.m
 %
 % This demo is included in
-% Quadratic speedup of the global search using a biased crossover of two good solutions
+% Quadratic speedup of global search using a biased crossover of two good solutions
 % Takuya Isomura
 %
 % The MATLAB scripts are available at
@@ -38,10 +38,11 @@ N_LM  = zeros(NT,1,'single');
 %--------------------------------------------------------------------------------
 
 for h = 1:NT
- N     = (floor((h-1)/20)+2)*5;             % state dimensionality
- T     = 4000000;                           % number of samples
- if (K <= 3 && N >= 25), T = 40000000; end  % increase T for accuracy
- if (K == 2 && N >= 35), T = 400000000; end % increase T for accuracy
+ N     = (floor((h-1)/20)+2)*5;              % state dimensionality
+ T     = 4000000;                            % number of samples
+ if (K <= 3 && N >= 25), T = 40000000; end   % increase T for accuracy
+ if (K == 2 && N == 35), T = 400000000; end  % increase T for accuracy
+ if (K == 2 && N == 40), T = 1000000000; end % increase T for accuracy
  sigma = [1 1 1 1] / sqrt(nchoosek(N,1)+nchoosek(N,2)+nchoosek(N,3)+nchoosek(N,4)); % standard derivation of coefficients
  
  % create cost function
@@ -105,7 +106,7 @@ for h = 1:NT
  hist(L,100)
  drawnow
  
- csvwrite(['Lstat2_K',num2str(K),'.csv'],[(1:NT)' Nlist Lmean Lvar Lmin Tlist N_LM])
+ csvwrite(['fig2b_Lstat_K',num2str(K),'.csv'],[(1:NT)' Nlist Lmean Lvar Lmin Tlist N_LM])
 end
 
 %--------------------------------------------------------------------------------

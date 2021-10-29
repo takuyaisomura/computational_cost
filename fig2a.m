@@ -3,7 +3,7 @@
 % fig2a.m
 %
 % This demo is included in
-% Quadratic speedup of the global search using a biased crossover of two good solutions
+% Quadratic speedup of global search using a biased crossover of two good solutions
 % Takuya Isomura
 %
 % The MATLAB scripts are available at

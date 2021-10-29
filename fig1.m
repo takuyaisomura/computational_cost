@@ -3,7 +3,7 @@
 % fig1.m
 %
 % This demo is included in
-% Quadratic speedup of the global search using a biased crossover of two good solutions
+% Quadratic speedup of global search using a biased crossover of two good solutions
 % Takuya Isomura
 %
 % The MATLAB scripts are available at
@@ -81,9 +81,9 @@ for h = 1:NT
   Lmin_ex(h,1)  = min(L);
   if (h == 80)
    [~,idx] = min(L);
-   csvwrite(['Lstat_fig1_x_L', num2str(K),'.csv'],[x(:,1:100)' L(1:100)'; x(:,(idx-99):(idx+100))' L((idx-99):(idx+100))'; x(:,(T-99):T)' L((T-99):T)'])
-   csvwrite(['Lstat_fig1_Lhist', num2str(K),'.csv'],[(-10:0.1:(10-0.1)); histcounts(L,-10:0.1:10)])
-   csvwrite(['Lstat_fig1_K', num2str(K),'ex.csv'],[(1:NTex)' nlist_ex Lmean_ex Lvar_ex Lmin_ex])
+   csvwrite(['fig1_Lstat_x_L', num2str(K),'.csv'],[x(:,1:100)' L(1:100)'; x(:,(idx-99):(idx+100))' L((idx-99):(idx+100))'; x(:,(T-99):T)' L((T-99):T)'])
+   csvwrite(['fig1_Lstat_Lhist', num2str(K),'.csv'],[(-10:0.1:(10-0.1)); histcounts(L,-10:0.1:10)])
+   csvwrite(['fig1_Lstat_K', num2str(K),'ex.csv'],[(1:NTex)' nlist_ex Lmean_ex Lvar_ex Lmin_ex])
   end
  end
  
@@ -101,7 +101,7 @@ for h = 1:NT
  title(['h=',num2str(h),', N=',num2str(N)])
  drawnow
  
- csvwrite(['Lstat_fig1_K', num2str(K),'.csv'],[(1:NT)' nlist Lmean Lvar Lmin Ngdmean])
+ csvwrite(['fig1_Lstat_K', num2str(K),'.csv'],[(1:NT)' nlist Lmean Lvar Lmin Ngdmean])
  
 end
 

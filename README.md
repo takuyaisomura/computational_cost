@@ -1,4 +1,4 @@
-# Computational cost for identifying an approximate gobal minimum
+# Minimising computational cost for global search
 
 ## Overview
 This project involves MATLAB scripts

@@ -7,11 +7,11 @@ This project involves MATLAB scripts
 
 This is a supplementary material of
 
-""
+"Quadratic speedup of global search using a biased crossover of two good solutions"
 
 Takuya Isomura
 
-Preprint at https://arxiv.org/
+Preprint at https://arxiv.org/abs/2111.07680
 
 <br>
 

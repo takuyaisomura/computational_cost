@@ -1,7 +1,9 @@
 # Minimising computational cost for global search
 
 ## Overview
-This project involves MATLAB scripts
+The minimisation of cost functions is crucial in various optimisation fields. However, identifying their global minimum remains challenging owing to the huge computational cost incurred. This work analytically expresses the computational cost to identify an approximate global minimum for a class of cost functions defined under a high-dimensional discrete state space. Then, we derive an optimal global search scheme that minimises the computational cost.
+
+This project involves MATLAB scripts.
 
 <br>
 
@@ -22,6 +24,29 @@ Copyright (C) 2021 Takuya Isomura
 <br>
 
 2021-10-26
+
+
+## System Requirements
+This package requires only a standard computer with enough RAM to support the in-memory operations.
+
+Software: MATLAB
+
+RAM: 16+ GB
+
+<br>
+
+The package has been tested on the following system:
+
+iMac Pro (macOS Catalina)
+
+CPU: 2.3GHz 18 core Intel Xeon W
+
+RAM: 128 GB
+
+MATLAB R2020b
+
+The runtimes below are generated using this setup.
+
 
 ## Demo
 ### fig1
@@ -57,6 +82,7 @@ Application to the travelling salesman problem.
 The number of cities is N = 500. The simulation is conducted with 50 different travelling salesman problems.
 
 The simulation should take approximately 28 hours.
+
 
 ## License
 This project is covered under the **GNU General Public License v3.0**.

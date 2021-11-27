@@ -55,7 +55,7 @@ The cost function and global minimum.
 
 Relationship between the state dimensionality N and the global minimum L_GM.
 
-The simulation should take approximately 4 hours.
+Run 'fig1.m'. The simulation should take approximately 4 hours.
 
 ### fig2
 
@@ -65,7 +65,7 @@ a, Schematic of basins and local minima in the N-dimensional state space.
 
 b, Relationship between the state dimensionality N and the number of local minima N_LM.
 
-The simulation should take approximately 1 day.
+Run 'fig2a.m' and 'fig2b.m'. The simulation should take approximately 1 day.
 
 ### fig3
 
@@ -73,7 +73,7 @@ Outcomes of selection and crossover algorithm.
 
 Fourth-degree cost functions in a 200-dimensional binary state space (N = 200, K = 4) are employed, and M = 20000 states are sampled for each condition. The crossover rate is varied between 0 ≤ 𝛾 ≤ 0.5.
 
-The simulation should take approximately 38 hours.
+Run 'fig3.m'. The simulation should take approximately 38 hours.
 
 ### fig4
 
@@ -81,7 +81,7 @@ Application to the travelling salesman problem.
 
 The number of cities is N = 500. The simulation is conducted with 50 different travelling salesman problems.
 
-The simulation should take approximately 28 hours.
+Run 'fig4.m'. The simulation should take approximately 28 hours.
 
 
 ## License

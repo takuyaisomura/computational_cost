@@ -23,6 +23,13 @@ Copyright (C) 2021 Takuya Isomura
 
 2021-10-26
 
+### fig4
+
+Application to the travelling salesman problem.
+
+The number of cities is N = 500. The simulation is conducted with 50 different travelling salesman problems.
+
+The preprocessing should take approximately 28 hours.
 
 ## License
 This project is covered under the **GNU General Public License v3.0**.
